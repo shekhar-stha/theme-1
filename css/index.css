@@ -1105,6 +1105,18 @@ nav .navbar-nav .nav-link:hover {
   gap: 2rem;
 }
 
+@media (max-width: 1200px) {
+  .services .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services .service-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .services .service-grid .service {
   padding-bottom: 1%;
   border-radius: 20px;
