@@ -1,0 +1,106 @@
+@import "./custom";
+
+@import "./components/components";
+
+@import "./layout/layout";
+
+@import "./extra";
+
+
+/* Services Section */
+.services {
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .services .services-description {
+    width: 25%;
+  }
+  
+  @media (max-width: 992px) {
+    .services .services-description {
+      width: 100%;
+    }
+  }
+  
+  .services .services-row {
+    width: 73%;
+  }
+  
+  @media (max-width: 992px) {
+    .services .services-row {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  }
+  
+  .services .services-row .service {
+    margin: 0 1rem;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .services .services-row .service:hover .hidden-info p,
+  .services .services-row .service:hover .hidden-info a {
+    display: block;
+  }
+  
+  .services .services-row .service:hover .img-div img {
+    width: 100%;
+    min-height: 25rem;
+    object-fit: cover;
+    filter: brightness(20%);
+  }
+  
+  .services .services-row .service .hidden-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 1;
+    color: var(--white);
+    width: 100%;
+  }
+  
+  .services .services-row .service .hidden-info h3,
+  .services .services-row .service .hidden-info .h3 {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 30px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  
+  .services .services-row .service .hidden-info p {
+    display: none;
+    text-align: center;
+    width: 95%;
+  }
+  
+  .services .services-row .service .hidden-info a {
+    display: none;
+    text-align: center;
+    color: var(--white);
+    padding: 8px 16px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+    border-radius: 8px;
+    font-size: 17px;
+  }
+  
+  .services .services-row .service .img-div {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .services .services-row .service .img-div img {
+    width: 100%;
+    min-height: 25rem;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
