@@ -99,7 +99,7 @@
 
   /* Services */
   --services-section-background: #c7e2c3;
-  --services-header-color: var(--white);
+  --services-header-color: var(--primary);
   --service-background-color-1: #eaf1e9;
   --service-background-color-2: #fcebd6;
 
