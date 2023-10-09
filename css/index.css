@@ -50,6 +50,7 @@
   --navigation-link-border-color: var(--primary);
   --navigation-link-text-decoration: none;
   --navigation-link-hover-color: var(--primary);
+  --upper-nav-icon-color: var(--primary);
 
   /* Hero */
   --hero-overlay: var(--normal-green-overlay-top-bottom);
@@ -109,6 +110,7 @@
   --footer-section-text-color: var(--white);
   --footer-section-ahref-color: var(--white);
   --footer-section-ahref-hover-color: var(--white);
+  --footer-icon-color: var(--primary);
 
   /* Primary Overlay Section */
   --primary-overlay-bg-color: rgba(26, 82, 0, 0.5);
@@ -542,6 +544,9 @@ nav {
   font-size: 20px;
 }
 
+.top-information i{
+  color: var(--upper-nav-icon-color);
+}
 
 /* Navbar */
 nav {
@@ -1464,7 +1469,10 @@ footer .footer-nav p {
   margin-bottom: 1rem;
 }
 
-
+footer i{
+  color: var(--footer-icon-color);
+}
+/* Homepage Completed */
 
 .error-page img {
   width: 100%;
